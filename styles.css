@@ -368,14 +368,14 @@ footer{
 }
 
 .animation-img-QS {
-    transform: translateX(4%);
+    transform: translateX(10%);
     animation: imageLeftRightQS 8s infinite normal both;
     transition: ease 1s;
 }
 
 @keyframes imageLeftRightQS {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
         transition: ease .5s;
     }
 

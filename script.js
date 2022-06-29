@@ -72,7 +72,6 @@ for(var i=0;i<msg.length;i++){
 
 //Desc HTML
 const textfix = document.querySelector("#text-fix")
-
 var deschtml = document.querySelector('#icon-html');
 
 deschtml.addEventListener("mouseover", function(){
