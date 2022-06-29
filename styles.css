@@ -231,7 +231,7 @@ body {
 .Icons-habilidades{
     display: flex;
     align-items: center;
-    width: 37vw;
+    width: 45vw;
     height: 45vh;
 }
 
@@ -246,11 +246,12 @@ body {
 }
 
 .icon-list img{
-    width: 10vw;
-    margin: 10px;
-    padding: 10px 20px;
+    width: 140px;
+    margin: 2px;
+    padding: 10px 30px;
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.205);
+    color: white;
 }
 
 .icon-list img:hover{

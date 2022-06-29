@@ -67,3 +67,4 @@ for(var i=0;i<msg.length;i++){
         },100*pos);
     })(i);
 }
+
