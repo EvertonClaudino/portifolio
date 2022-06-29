@@ -68,3 +68,115 @@ for(var i=0;i<msg.length;i++){
     })(i);
 }
 
+//Text Habilidades
+
+//Desc HTML
+const textfix = document.querySelector("#text-fix")
+
+var deschtml = document.querySelector('#icon-html');
+
+deschtml.addEventListener("mouseover", function(){
+var texthtml =  document.querySelector("#text-html")
+texthtml.classList.remove("hide");
+
+var textfix = document.querySelector("#text-fix")
+textfix.classList.add("hide");
+});
+
+var deschtml = document.querySelector('#icon-html');
+deschtml.addEventListener("mouseout", function(){
+var texthtml =  document.querySelector("#text-html")
+texthtml.classList.add("hide");
+
+textfix.classList.remove("hide");
+});
+
+//Desc CSS
+var desccss = document.querySelector('#icon-css');
+
+desccss.addEventListener("mouseover", function(){
+var textcss =  document.querySelector("#text-css")
+textcss.classList.remove("hide");
+
+textfix.classList.add("hide");
+});
+
+var desccss = document.querySelector('#icon-css');
+desccss.addEventListener("mouseout", function(){
+var textcss =  document.querySelector("#text-css")
+textcss.classList.add("hide");
+
+textfix.classList.remove("hide");
+});
+
+//Desc JS
+var descjs = document.querySelector('#icon-js');
+descjs.addEventListener("mouseover", function(){
+var textjs =  document.querySelector("#text-js")
+textjs.classList.remove("hide");
+
+textfix.classList.add("hide");
+});
+
+var descjs = document.querySelector('#icon-js');
+
+descjs.addEventListener("mouseout", function(){
+var textjs =  document.querySelector("#text-js")
+textjs.classList.add("hide");
+
+textfix.classList.remove("hide");
+});
+
+//Desc React
+var descreact = document.querySelector('#icon-react');
+
+descreact.addEventListener("mouseover", function(){
+var textreact =  document.querySelector("#text-react");
+textreact.classList.remove("hide");
+
+textfix.classList.add("hide");
+});
+
+var descreact = document.querySelector('#icon-react');
+descreact.addEventListener("mouseout", function(){
+var textreact =  document.querySelector("#text-react");
+textreact.classList.add("hide");
+
+textfix.classList.remove("hide");
+});
+
+//Desc GitHub
+var descgithub = document.querySelector('#icon-github');
+
+descgithub.addEventListener("mouseover", function(){
+var textgithub =  document.querySelector("#text-github")
+textgithub.classList.remove("hide");
+
+textfix.classList.add("hide");
+});
+
+var descgithub = document.querySelector('#icon-github');
+descgithub.addEventListener("mouseout", function(){
+var textgithub =  document.querySelector("#text-github")
+textgithub.classList.add("hide");
+
+textfix.classList.remove("hide");
+});
+
+//Desc Git
+var descgit = document.querySelector('#icon-git');
+
+descgit.addEventListener("mouseover", function(){
+var textgit =  document.querySelector("#text-git")
+textgit.classList.remove("hide");
+
+textfix.classList.add("hide");
+});
+
+var descgit = document.querySelector('#icon-git');
+descgit.addEventListener("mouseout", function(){
+var textgit =  document.querySelector("#text-git")
+textgit.classList.add("hide");
+
+textfix.classList.remove("hide");
+});

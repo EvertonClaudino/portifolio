@@ -225,8 +225,12 @@ body {
 
 .text-habilidades{
     display: flex;
+    font-family: 'Roboto Mono';
+    text-align: justify;
     align-items: center;
     color: white;
+    width: 40vw;
+    font-size: 1.3rem;
 }
 .Icons-habilidades{
     display: flex;
@@ -239,6 +243,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.hide{
+    display: none;
 }
 
 .icon-list{
