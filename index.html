@@ -16,6 +16,10 @@
     <div class="logo">
       <a href="#" id="log">LOGO</a>
     </div>
+    <button id="btn-mobile">
+      <span id="hamburguer"></span>
+    </button>
+
     <ul class="menu">
       <li class="menu-item"><a id="hom" href="#">Home</a></li>
       <li class="menu-item"><a id="quemso" href="#quemsou">Quem Sou</a></li>
@@ -41,7 +45,7 @@
         </div>
       </div>
 
-      <div class="image-inicial animation-img">
+      <div class="image-inicial">
         <img class="animation-img" src="img/fotoo.png" />
       </div>
     </section>
@@ -52,7 +56,7 @@
         <img src="img/foto2.png" data-anime="left"/>
       </div>
 
-      <div class="txt-quemsou">
+      <div class="txt-quemsou"data-anime="right" >
         <h1 data-anime="down">Quem Sou.</h1>
         <p data-anime="right">Meu nome é Everton Claudino, Estudante e entusiasta na programação.
           Atualmente estudando na instituição <a href='https://flag.pt/' target="_blank">FLAG</a> no curso <a
@@ -90,10 +94,20 @@
           <div class="titulo-habilidades">
             <h1>Habilidades</h1>
           </div>
-      <div class="container-text-list">
+ 
+        <div class="Icons-habilidades" data-anime="right">
+          <ul class="habilidades">
+            <li class="icon-list"><img id="icon-html" src="./img/HTML.svg" alt="HTML"></li>
+            <li class="icon-list"><img id="icon-css" src="./img/CSS3.svg" alt="CSS3"></li>
+            <li class="icon-list"><img id="icon-js" src="./img/JS.svg" alt="JavaScript"></li>
+            <li class="icon-list"><img id="icon-react" src="./img/REACT.svg" alt="React"></li>
+            <li class="icon-list"><img id="icon-github" src="./img/GITHUB.svg" alt="React"></li>
+            <li class="icon-list"><img id="icon-git" src="./img/GIT.svg" alt="React"></li>
+          </ul>
+        </div>
+                 
         <div class="text-habilidades" data-anime="left">
           <p class="textfix" id="text-fix">// Passe o Mouse para saber mais!</p>
-
           <p id="text-html" class="hide">
           HTML
           <br>
@@ -130,17 +144,6 @@
           <br>
           GitHub é um serviço de hospedagem baseado na web para repositórios Git, como os usados para armazenar docs.microsoft.com conteúdo. Em qualquer projeto, o GitHub aloja o repositório principal, do qual os contribuidores podem fazer cópias para trabalharem.</p>
         </div>
-        <div class="Icons-habilidades" data-anime="right">
-          <ul class="habilidades">
-            <li class="icon-list"><img id="icon-html" src="./img/HTML.svg" alt="HTML"></li>
-            <li class="icon-list"><img id="icon-css" src="./img/CSS3.svg" alt="CSS3"></li>
-            <li class="icon-list"><img id="icon-js" src="./img/JS.svg" alt="JavaScript"></li>
-            <li class="icon-list"><img id="icon-react" src="./img/REACT.svg" alt="React"></li>
-            <li class="icon-list"><img id="icon-github" src="./img/GITHUB.svg" alt="React"></li>
-            <li class="icon-list"><img id="icon-git" src="./img/GIT.svg" alt="React"></li>
-          </ul>
-        </div>
-      </div>
     </section>
   </main>
 

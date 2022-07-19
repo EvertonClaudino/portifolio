@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
     font-family: 'Roboto Mono', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -19,6 +20,7 @@ body {
     background: linear-gradient(90deg, rgba(9,9,9,1) 39%, rgba(26,8,38,1) 65%, rgba(26,8,38,1) 100%);
     font-size: 1.6rem;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 .nav-bar{
@@ -61,6 +63,10 @@ body {
     transition: 0.8s;
 }
 
+#btn-mobile{
+    display: none;
+}
+
 
 .page-inicial{
     display: flex;
@@ -77,17 +83,20 @@ body {
 }
 
 .txt1{
+    display: flex;
     font-size: 1.7rem;
     font-weight: 300;
 }
 
 .txt2{
+    display: flex;
     font-size: 3rem;
     font-weight: 700;
 
 }
 
 .txt3{
+    display: flex;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.2vw;
@@ -134,15 +143,15 @@ body {
 .txt-quemsou {
     width: 40vw;
     padding: 3vh;
-    line-height: 5.5vh;
-    margin-left: 15vw;
+    line-height: 3rem;
+    margin-left: 10vw;
     text-align: justify;
 }
 
 .txt-quemsou h1{
     font-size: 2.5rem;
     letter-spacing: 2px;
-    margin-bottom: 7vh;
+    margin-bottom: 6vh;
     color: wheat;
 }
 
@@ -170,6 +179,7 @@ body {
     justify-content: center;
     margin-top: 10vh;
     font-size: 1rem;
+    
 }
 
 .projeto1{
@@ -217,26 +227,19 @@ body {
     color: white;
 }
 
-
-.container-text-list{
-    display: flex;
-    justify-content: space-around;
-}
-
 .text-habilidades{
     display: flex;
+    justify-content: center;
     font-family: 'Roboto Mono';
-    text-align: justify;
+    text-align: center;
     align-items: center;
     color: white;
-    width: 40vw;
+    margin: 50px 60px 30px;
     font-size: 1.3rem;
 }
 .Icons-habilidades{
     display: flex;
-    align-items: center;
-    width: 45vw;
-    height: 45vh;
+    justify-content: center;
 }
 
 .habilidades{
@@ -254,16 +257,17 @@ body {
 }
 
 .icon-list img{
-    width: 140px;
-    margin: 2px;
+    width: 10vw;
+    margin: 15px 8px;
     padding: 10px 30px;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.205);
-    color: white;
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.082);
+    box-shadow: 1px 5px 3px black;
 }
 
 .icon-list img:hover{
     background-color: #13e79a;
+    cursor: pointer;
     transition: 1s;
 }
 
@@ -388,6 +392,272 @@ footer{
 
 
 /* Responsividade */
+
+@media (max-width: 768px) {
+    html{
+        font: 50%;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem
+    }
+
+    #hamburger{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin-top: 7px;
+        transition: .5s;
+        position: relative;
+    }
+
+    #navbar.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    
+    #navbar.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -9px;
+        
+    }
+
+    #navbar.active .menu{
+        display: block;
+        overflow-y: auto;
+        visibility: visible;
+        height: calc( 100vh - 70px );
+
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        height: 0;
+        z-index: 1000;
+        box-shadow: 1px 1px 15px rgba(3, 3, 3, 0.39);
+        background: linear-gradient(90deg, rgba(9,9,9,1) 39%, rgba(26,8,38,1) 65%, rgba(26,8,38,1) 100%);
+        transition: .6s;
+        overflow-y: hidden;
+        visibility: hidden;
+   
+    }
+
+    .menu-item{
+        margin-top: 60px ;
+        padding: 0px 0px 50px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .page-inicial{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .txt-inicial {
+        display: flex;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .txt-inicial img{
+        width: 7vw;
+    }
+    .animation-img{
+        animation: 0;
+    }
+
+    .image-inicial{
+        align-items: center;
+        margin: auto;
+        order: -1;
+    }
+
+    .image-inicial img{
+        width: 480px;
+    }
+
+    .page-quemsou{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .image-quemsou {
+        display: none;
+
+    }
+
+    .txt-quemsou{
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+        text-align: center;
+
+    }
+    
+}
+
+@media (max-width: 600px){
+    .txt-inicial{
+        margin: 10px 10px 5px;
+    }
+
+    .txt1 {
+        font-size: 3rem;
+
+    }
+
+    .txt2 {
+        font-size: 4rem;
+    }
+
+    .txt3 {
+        font-size: 2rem;
+
+    }
+
+    .txt-quemsou p{
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .txt-quemsou h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .titulo-projetos h1{
+        font-size: 3rem;
+
+    }
+    
+    .icons-inicial{
+        margin: 15px 5px 20px;
+    }
+    .image-inicial{
+        align-items: center;
+        margin: auto;
+        order: -1;
+    }
+    .image-inicial img{
+        width: 400px;
+    }
+    .titulo-projetos{
+        padding: 40px 0px 0px;
+    }
+    .page-projetos{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .projeto1{
+        width: 300px;
+        margin: 10px;
+        padding: 50px;
+        font-size: 2rem;
+    }
+    .projeto2{
+        width: 300px;
+        margin: 10px;
+        padding: 50px;
+        font-size: 2rem;
+    }
+    .projeto3{
+        width: 300px;
+        margin: 10px;
+        padding: 50px;
+        font-size: 2rem;
+    }
+    .projeto-github{
+        margin: 20px 10px 10px;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .titulo-habilidades{
+        padding-top: 5vh;
+    }
+
+    .text-habilidades{
+        font-size: 2rem;
+        text-align: justify;
+        width: 300px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 60%;
+    }
+    
+    .Icons-habilidades img{
+        display: flex;
+        flex-direction: row;
+        width: 28vw;
+    }
+
+    .text-habilidades{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 390px){
+    .page-inicial{
+        height: 85vh;
+    }
+
+    .image-inicial img{
+        width: 280px;
+    }
+    
+    .txt1{
+        font-size: 2rem;
+    }
+
+    .txt2{
+        font-size: 3rem;
+    }
+
+    .conteudo-projetos{
+        margin-top: 30px;
+    }
+
+    .titulo-habilidades{
+        padding: 10vh 0vh 2vh;
+    }
+
+    .Icons-habilidades{
+        margin: 2vh 0vh 8vh;
+    }
+
+    .text-habilidades{
+        margin: auto;
+        height: 250px;
+    }
+    
+}
 
 @media (max-width: 1860px){
     [data-anime="right"]{
