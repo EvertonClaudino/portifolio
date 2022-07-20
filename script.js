@@ -56,7 +56,7 @@ window.addEventListener("scroll", ()=>{
 })
 
 //Translate text
-const msg = "Front-End Developer Junior";
+const msg = "Front-End Developer";
 let txt3 = document.querySelector('.txt3');
 for(var i=0;i<msg.length;i++){
     (function(pos){
