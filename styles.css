@@ -161,6 +161,18 @@ body {
     color: rgba(255, 255, 255, 0.836);
 }
 
+.txt-quemsou a {
+    color: #00f8ec;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 700;
+}
+
+.txt-quemsou a:hover{
+    color: #0dada5;
+    transition: .4s;
+
+}
+
 .page-projetos{
     text-align: center;
     color: aliceblue;
@@ -213,6 +225,16 @@ body {
 .projeto-github{
     margin-top: 20vh;
     font-size: 1.2rem;
+    
+}
+.projeto-github a{
+    color: #00f8ec;
+}
+
+.projeto-github a:hover{
+    color: #0dada5;
+    transition: .4s;
+
 }
 
 .page-habilidades{
