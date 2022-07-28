@@ -540,7 +540,7 @@ footer img{
 
     }
     .txt-inicial img{
-        width: 5vw;
+        width: 50px;
     }
     .animation-img{
         animation: 0;
@@ -681,7 +681,7 @@ footer img{
         margin: 0px 0px 90px 0px;
     }
     .image-inicial{
-        margin: 100px 0px 0px 0px;    
+        margin: 120px 0px 0px 0px;    
     }
     .image-inicial img{
         width: 420px;    
@@ -702,7 +702,7 @@ footer img{
         width: 380px;    
     }
     .image-inicial{
-        margin: 70px 0px 0px 0px;
+        margin: 130px 0px 0px 0px;
     }   
     .txt1{
         font-size: 2rem;
