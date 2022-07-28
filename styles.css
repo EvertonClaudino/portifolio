@@ -30,11 +30,11 @@ body {
     background-color: #600ecc42;
     box-shadow: 1px 1px 15px rgba(3, 3, 3, 0.39);
     border-radius: 2px;
-    z-index: 1;
     font-size: 1rem;
     height: 8vh;
     width: 100%;
     position: fixed;
+    z-index: 999;
     top: 0;
 }
 
@@ -294,6 +294,25 @@ body {
     transition: 1s;
 }
 
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.contatosub{
+    margin-top: 3vh;
+    border: 3px red solid;
+    display: flex;
+    flex-direction: column;
+}
+.contatosub input{
+    margin: 10vh;
+    padding: 1vh;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -517,7 +536,7 @@ footer img{
 
     .image-inicial{
         align-items: center;
-        margin: auto;
+        margin: 150px 0px 0px 50px;
         order: -1;
     }
 
@@ -586,11 +605,11 @@ footer img{
     }
     .image-inicial{
         align-items: center;
-        margin: auto;
+        margin: 130px 0px 0px 0px;
         order: -1;
     }
     .image-inicial img{
-        width: 400px;
+        width: 450px;
     }
     .titulo-projetos{
         padding: 40px 0px 0px;
@@ -654,13 +673,15 @@ footer img{
 
 @media (max-width: 390px){
     .page-inicial{
-        height: 85vh;
+        height: 100vh;
     }
 
     .image-inicial img{
-        width: 280px;
+        width: 380px;    
     }
-    
+    .image-inicial{
+        margin: 70px 0px 0px 0px;
+    }   
     .txt1{
         font-size: 2rem;
     }
