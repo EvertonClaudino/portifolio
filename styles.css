@@ -664,6 +664,18 @@ footer img{
         flex-direction: row;
         width: 28vw;
     }
+    
+    .txt-inicial{
+        margin: 0px 0px 20px 0px;
+    }
+    .image-inicial{
+        margin: 100px 0px 0px 0px;    
+    }
+
+    
+    .image-inicial img{
+        width: 380px;    
+    }
 
     .text-habilidades{
         width: 300px;
