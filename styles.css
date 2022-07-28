@@ -523,12 +523,24 @@ footer img{
 
     .txt-inicial {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
         align-items: center;
     }
+    .txt1 {
+        font-size: 1.3rem;
 
+    }
+
+    .txt2 {
+        font-size: 2rem;
+    }
+
+    .txt3 {
+        font-size: 1.3rem;
+
+    }
     .txt-inicial img{
-        width: 7vw;
+        width: 5vw;
     }
     .animation-img{
         animation: 0;
@@ -536,12 +548,12 @@ footer img{
 
     .image-inicial{
         align-items: center;
-        margin: 150px 0px 0px 50px;
+        margin: 120px 0px 0px 50px;
         order: -1;
     }
 
     .image-inicial img{
-        width: 480px;
+        width: 380px;
     }
 
     .page-quemsou{
