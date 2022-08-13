@@ -11,19 +11,19 @@
 
 }
 
-html{
+html {
     font: 62.5%;
 
 }
 
 body {
-    background: linear-gradient(90deg, rgba(9,9,9,1) 39%, rgba(26,8,38,1) 65%, rgba(26,8,38,1) 100%);
+    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 39%, rgba(26, 8, 38, 1) 65%, rgba(26, 8, 38, 1) 100%);
     font-size: 1.6rem;
     scroll-behavior: smooth;
     height: 100vh;
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,19 +38,19 @@ body {
     top: 0;
 }
 
-.logo img{
+.logo img {
     margin-left: 5vw;
     width: 75px;
     height: 40px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     margin-right: 5vw;
 }
 
-.menu li a{
+.menu li a {
     border-radius: 5px;
     padding: 2px 10px 2px;
     margin-right: 5vh;
@@ -64,66 +64,66 @@ body {
     transition: 0.8s;
 }
 
-#btn-mobile{
+#btn-mobile {
     display: none;
 }
 
 
-.page-inicial{
+.page-inicial {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 94vh;
 }
 
-.txt-inicial{
+.txt-inicial {
     display: flex;
     flex-direction: column;
     color: aliceblue;
     margin-left: 10vw;
 }
 
-.txt1{
+.txt1 {
     display: flex;
     font-size: 1.7rem;
     font-weight: 300;
 }
 
-.txt2{
+.txt2 {
     display: flex;
     font-size: 3rem;
     font-weight: 700;
 
 }
 
-.txt3{
+.txt3 {
     display: flex;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.2vw;
 }
 
-.icons-inicial{
+.icons-inicial {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 }
 
-.icons-inicial img{
+.icons-inicial img {
     width: 4vw;
     margin-right: 2vw;
 }
 
-.image-inicial{
+.image-inicial {
     margin-right: 5vw;
 }
 
-.image-inicial img{
+.image-inicial img {
     width: 32vw;
-    
+
 }
 
-.page-quemsou{
+.page-quemsou {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,13 +131,14 @@ body {
     height: 94vh;
 
 }
+
 .image-quemsou {
     display: flex;
     padding-left: 5vw;
 
 }
 
-.image-quemsou img{
+.image-quemsou img {
     width: 35vw;
 }
 
@@ -149,7 +150,7 @@ body {
     text-align: justify;
 }
 
-.txt-quemsou h1{
+.txt-quemsou h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
     margin-bottom: 6vh;
@@ -167,18 +168,19 @@ body {
     font-weight: 700;
 }
 
-.txt-quemsou a:hover{
+.txt-quemsou a:hover {
     color: #0dada5;
     transition: .4s;
 
 }
 
-.page-projetos{
+.page-projetos {
     text-align: center;
     color: aliceblue;
     height: 94vh;
 }
-.titulo-projetos{
+
+.titulo-projetos {
     display: flex;
     justify-content: center;
     padding: 10vh;
@@ -186,16 +188,16 @@ body {
     color: white;
 }
 
-.conteudo-projetos{
+.conteudo-projetos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10vh;
     font-size: 1rem;
-    
+
 }
 
-.projeto1{
+.projeto1 {
     display: flex;
     justify-content: center;
     background: rgba(153, 151, 151, 0.151);
@@ -205,7 +207,7 @@ body {
 
 }
 
-.projeto2{
+.projeto2 {
     display: flex;
     justify-content: center;
     background: rgba(153, 151, 151, 0.151);
@@ -214,7 +216,7 @@ body {
     width: 25vw;
 }
 
-.projeto3{
+.projeto3 {
     display: flex;
     justify-content: center;
     background: rgba(153, 151, 151, 0.151);
@@ -222,27 +224,28 @@ body {
     width: 25vw;
 }
 
-.projeto-github{
+.projeto-github {
     margin-top: 20vh;
     font-size: 1.2rem;
-    
+
 }
-.projeto-github a{
+
+.projeto-github a {
     color: #00f8ec;
 }
 
-.projeto-github a:hover{
+.projeto-github a:hover {
     color: #0dada5;
     transition: .4s;
 
 }
 
-.page-habilidades{
+.page-habilidades {
     height: 94vh;
     background-color: #7811df21;
 }
 
-.titulo-habilidades{
+.titulo-habilidades {
     display: flex;
     justify-content: center;
     padding: 10vh;
@@ -250,7 +253,7 @@ body {
     color: white;
 }
 
-.text-habilidades{
+.text-habilidades {
     display: flex;
     justify-content: center;
     font-family: 'Roboto Mono';
@@ -260,26 +263,27 @@ body {
     margin: 50px 60px 30px;
     font-size: 1.3rem;
 }
-.Icons-habilidades{
+
+.Icons-habilidades {
     display: flex;
     justify-content: center;
 }
 
-.habilidades{
+.habilidades {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.icon-list{
+.icon-list {
     display: flex;
 }
 
-.icon-list img{
+.icon-list img {
     width: 10vw;
     margin: 15px 8px;
     padding: 10px 30px;
@@ -288,45 +292,75 @@ body {
     box-shadow: 1px 5px 3px black;
 }
 
-.icon-list img:hover{
+.icon-list img:hover {
     background-color: #13e79a;
     cursor: pointer;
     transition: 1s;
 }
 
-.contato{
+.page-contato {
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    color: wheat;
+}
+
+.contato-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+}
+
+.contato-img img{
+    width: 40vw;
+}
+
+.contato-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    font-family: Roboto;
+}
+.contato-form h1 {
+    margin-bottom: 20px;
+}
+.contato-form input{
+    padding: 20px;
+    width: 31vw;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.contato-form textarea {
+    border-radius: 5px;
+    height: 15vh;
+    padding: 5px;
+    font-size: 1rem;
+}
+.contato-form button{
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 200px;
 }
 
-.contatosub{
-    margin-top: 3vh;
-    border: 3px red solid;
-    display: flex;
-    flex-direction: column;
-}
-.contatosub input{
-    margin: 10vh;
-    padding: 1vh;
-}
-
-footer{
+footer {
+    background-color: #7811df21;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 13vh;
     color: white;
 }
 
-footer img{
-    margin-top:10px;
+footer img {
+    margin-top: 10px;
 
 }
 
-.txt{
+.txt {
     display: flex;
     font-family: 'Work sans', sans-serif;
     margin: 30px;
@@ -338,13 +372,13 @@ footer img{
     margin: 10px;
 }
 
-.icons-footer{
+.icons-footer {
     display: flex;
     flex-direction: row;
     margin-right: 5vw;
 }
 
-.icons-footer img{
+.icons-footer img {
     width: 70px;
     padding: 10px;
     margin-right: 20px;
@@ -353,18 +387,18 @@ footer img{
 
 /*Animação the page*/
 
-[data-anime]{
+[data-anime] {
     opacity: 0;
     transition: .3s;
 }
 
-[data-anime="left"]{
+[data-anime="left"] {
     transform: translate3d(-50%, 0, 0);
     transition: 2s;
 }
 
 
-[data-anime="right"]{
+[data-anime="right"] {
     transform: translate3d(10%, 0, 0);
     transition: 2s;
 }
@@ -372,16 +406,16 @@ footer img{
 [data-anime="down"] {
     transform: translate3d(0px, -100px, 0px);
     transition: 3s;
-} 
+}
 
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
 
 /* Animação text */
 
-.txt3::after{
+.txt3::after {
     content: '';
     position: relative;
     border-right: 2px solid white;
@@ -390,10 +424,11 @@ footer img{
 
 }
 
-@keyframes piscar{
-    from{
+@keyframes piscar {
+    from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -442,11 +477,11 @@ footer img{
 /* Responsividade */
 
 @media (max-width: 768px) {
-    html{
+    html {
         font: 50%;
     }
 
-    #btn-mobile{
+    #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
         font-size: 1rem;
@@ -456,14 +491,15 @@ footer img{
         gap: .5rem
     }
 
-    #hamburger{
+    #hamburger {
         display: block;
         border-top: 2px solid;
         width: 20px;
     }
 
-    #hamburguer::after, #hamburguer::before{
-        content:'';
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
         display: block;
         width: 20px;
         height: 2px;
@@ -473,26 +509,26 @@ footer img{
         position: relative;
     }
 
-    #navbar.active #hamburguer::before{
+    #navbar.active #hamburguer::before {
         transform: rotate(135deg);
     }
 
-    
-    #navbar.active #hamburguer::after{
+
+    #navbar.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -9px;
-        
+
     }
 
-    #navbar.active .menu{
+    #navbar.active .menu {
         display: block;
         overflow-y: auto;
         visibility: visible;
-        height: calc( 100vh - 70px );
+        height: calc(100vh - 70px);
 
     }
 
-    .menu{
+    .menu {
         display: block;
         position: absolute;
         width: 100%;
@@ -500,21 +536,21 @@ footer img{
         height: 0;
         z-index: 1000;
         box-shadow: 1px 1px 15px rgba(3, 3, 3, 0.39);
-        background: linear-gradient(90deg, rgba(9,9,9,1) 39%, rgba(26,8,38,1) 65%, rgba(26,8,38,1) 100%);
+        background: linear-gradient(90deg, rgba(9, 9, 9, 1) 39%, rgba(26, 8, 38, 1) 65%, rgba(26, 8, 38, 1) 100%);
         transition: .6s;
         overflow-y: hidden;
         visibility: hidden;
-   
+
     }
 
-    .menu-item{
-        margin-top: 60px ;
+    .menu-item {
+        margin-top: 60px;
         padding: 0px 0px 50px;
         text-align: center;
         font-size: 2rem;
     }
 
-    .page-inicial{
+    .page-inicial {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -526,6 +562,7 @@ footer img{
         margin-bottom: 90px;
         align-items: center;
     }
+
     .txt1 {
         font-size: 1.3rem;
 
@@ -539,24 +576,26 @@ footer img{
         font-size: 1.3rem;
 
     }
-    .txt-inicial img{
+
+    .txt-inicial img {
         width: 50px;
     }
-    .animation-img{
+
+    .animation-img {
         animation: 0;
     }
 
-    .image-inicial{
+    .image-inicial {
         align-items: center;
         margin: 120px 0px 0px 50px;
         order: -1;
     }
 
-    .image-inicial img{
+    .image-inicial img {
         width: 380px;
     }
 
-    .page-quemsou{
+    .page-quemsou {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -568,18 +607,22 @@ footer img{
 
     }
 
-    .txt-quemsou{
+    .txt-quemsou {
         margin: 0;
         padding: 0;
         width: 90vw;
         text-align: center;
 
     }
-    
+
+    .page-habilidades {
+        height: 100vh;
+    }
+
 }
 
-@media (max-width: 600px){
-    .txt-inicial{
+@media (max-width: 600px) {
+    .txt-inicial {
         margin: 0px 5px 0px;
     }
 
@@ -597,68 +640,76 @@ footer img{
 
     }
 
-    .txt-quemsou p{
+    .txt-quemsou p {
         font-size: 2rem;
         text-align: justify;
     }
 
-    .txt-quemsou h1{
+    .txt-quemsou h1 {
         font-size: 3rem;
         text-align: center;
     }
 
-    .titulo-projetos h1{
+    .titulo-projetos h1 {
         font-size: 3rem;
 
     }
-    
-    .icons-inicial{
+
+    .icons-inicial {
         margin: 15px 5px 20px;
     }
-    .image-inicial{
+
+    .image-inicial {
         align-items: center;
         margin: 120px 0px 0px 0px;
         order: -1;
     }
-    .image-inicial img{
+
+    .image-inicial img {
         width: 450px;
     }
-    .titulo-projetos{
+
+    .titulo-projetos {
         padding: 40px 0px 0px;
     }
-    .page-projetos{
+
+    .page-projetos {
         flex-direction: column;
         margin-top: 0;
     }
-    .projeto1{
+
+    .projeto1 {
         width: 300px;
         margin: 10px;
         padding: 50px;
         font-size: 2rem;
     }
-    .projeto2{
+
+    .projeto2 {
         width: 300px;
         margin: 10px;
         padding: 50px;
         font-size: 2rem;
     }
-    .projeto3{
+
+    .projeto3 {
         width: 300px;
         margin: 10px;
         padding: 50px;
         font-size: 2rem;
     }
-    .projeto-github{
+
+    .projeto-github {
         margin: 20px 10px 10px;
         padding: 0;
         font-size: 2rem;
     }
 
-    .titulo-habilidades{
+    .titulo-habilidades {
         padding-top: 5vh;
     }
 
-    .text-habilidades{
+    .text-habilidades {
         font-size: 2rem;
         text-align: justify;
         width: 300px;
@@ -666,73 +717,77 @@ footer img{
     }
 }
 
-@media (max-width: 480px){
-    html{
+@media (max-width: 480px) {
+    html {
         font-size: 60%;
     }
-    
-    .Icons-habilidades img{
+
+    .Icons-habilidades img {
         display: flex;
         flex-direction: row;
         width: 28vw;
     }
-    
-    .txt-inicial{
+
+    .txt-inicial {
         margin: 0px 0px 90px 0px;
     }
-    .image-inicial{
-        margin: 110px 0px 0px 0px;    
-    }
-    .image-inicial img{
-        width: 420px;    
+
+    .image-inicial {
+        margin: 110px 0px 0px 0px;
     }
 
-    .text-habilidades{
+    .image-inicial img {
+        width: 420px;
+    }
+
+    .text-habilidades {
         width: 300px;
     }
 
 }
 
-@media (max-width: 390px){
-    .page-inicial{
+@media (max-width: 390px) {
+    .page-inicial {
         height: 100vh;
     }
 
-    .image-inicial img{
-        width: 380px;    
+    .image-inicial img {
+        width: 380px;
     }
-    .image-inicial{
+
+    .image-inicial {
         margin: 130px 0px 0px 0px;
-    }   
-    .txt1{
+    }
+
+    .txt1 {
         font-size: 2rem;
     }
 
-    .txt2{
+    .txt2 {
         font-size: 3rem;
     }
 
-    .conteudo-projetos{
+    .conteudo-projetos {
         margin-top: 30px;
     }
 
-    .titulo-habilidades{
+    .titulo-habilidades {
         padding: 10vh 0vh 2vh;
     }
 
-    .Icons-habilidades{
+    .Icons-habilidades {
         margin: 2vh 0vh 8vh;
     }
 
-    .text-habilidades{
+    .text-habilidades {
         margin: auto;
         height: 250px;
     }
-    
+
 }
 
-@media (max-width: 1860px){
-    [data-anime="right"]{
+@media (max-width: 1960px) {
+    [data-anime="right"] {
         transform: translate3d(-50px, 0, 0);
     }
 }
