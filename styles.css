@@ -347,7 +347,7 @@ body {
 }
 
 footer {
-    background-color: #1D0A2E;
+    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 39%, rgba(26, 8, 38, 1) 65%, rgba(26, 8, 38, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
