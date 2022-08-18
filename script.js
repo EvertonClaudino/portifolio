@@ -37,26 +37,26 @@ document.querySelector("#quemso").addEventListener("click", function (event) {
 
 //Scroll of the page
 const item = document.querySelectorAll("[data-anime]");
-const animeScroll = () =>{
+const animeScroll = () => {
     const windowTop = window.pageYOffset + window.innerHeight -0.8;
 
     item.forEach (element => {
         if ( windowTop > element.offsetTop ){
             element.classList.add( "animate" );
         } else {
-            element.classList.remove( "animate" )
+            element.classList.remove( "animate" );
         }
     });
 };
 
 animeScroll();
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", () => {
     animeScroll();
 })
 
 //Translate text
-const msg = "Front-End Developer";
+const msg = "Front-End Developer Júnior";
 let txt3 = document.querySelector('.txt3');
 for(var i=0;i<msg.length;i++){
     (function(pos){
@@ -186,10 +186,8 @@ const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu(event ){
     if(event.type === 'touchstart') event.preventDefault();
-    const nav = document.getElementById('navbar')
-    nav.classList.toggle('active')
-    const active = nav.classList.contains('active');
-
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('active');
 }
 
 btnMobile.addEventListener('click', toggleMenu);

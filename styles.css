@@ -27,10 +27,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #600ecc42;
-    box-shadow: 1px 1px 15px rgba(3, 3, 3, 0.39);
-    border-radius: 2px;
+    background-color: #630ad862;
+    box-shadow: 1px 1px 15px #000;
+    border-radius: 2px 2px 4px 4px;
     font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
     height: 8vh;
     width: 100%;
     position: fixed;
@@ -47,13 +49,13 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
+    gap: 1vw;
     margin-right: 5vw;
 }
 
 .menu li a {
     border-radius: 5px;
     padding: 2px 10px 2px;
-    margin-right: 5vh;
     color: rgb(211, 206, 206);
 
 }
@@ -347,7 +349,7 @@ body {
 }
 
 footer {
-    background-color: #7811df21;
+    background: linear-gradient(90deg, rgba(9, 9, 9, 1) 39%, rgba(26, 8, 38, 1) 65%, rgba(26, 8, 38, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
