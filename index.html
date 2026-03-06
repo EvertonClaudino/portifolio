@@ -1,179 +1,272 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link type="text/javascript" href="./script.js">
-  <link rel="icon" type="favico" href="./img/logo/favicon.ico">
-  <title>Everton Claudino</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everton Claudino | Front-End Developer</title>
+    <meta name="description" content="Portfólio pessoal de Everton Claudino — Desenvolvedor Front-End Júnior." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!--NavBar-->
-  <nav class="nav-bar sticky" id="navbar">
-    <div class="logo">
-      <a href="#" id="log"><img src="./img/logo/logo.png" alt="Logo"></a>
-    </div>
-    <button id="btn-mobile">
-      <span id="hamburguer"></span>
-    </button>
 
-    <ul class="menu">
-      <li class="menu-item"><a id="hom" href="#">Home</a></li>
-      <li class="menu-item"><a id="quemso" href="#quemsou">Quem Sou</a></li>
-      <li class="menu-item"><a id="projeto" href="#projetos">Projetos</a></li>
-      <li class="menu-item"><a id="habilidade" href="#habilidades">Habilidades</a></li>
-    </ul>
-  </nav>
-
-  <!--Page-Inicial-->
-  <main class="main">
-
-    <section class="page-inicial" id="home">
-
-      <div class="txt-inicial">
-        <p class="txt1" data-anime="down">Olá, eu sou</p>
-        <p class="txt2" data-anime="down">Everton Claudino</p>
-        <p class="txt3"></p>
-        <div class="icons-inicial" data-anime="left">
-          <a href='https://github.com/EvertonClaudino' target="_blank"><img src="./img/icons/github.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/everton-claudino-2051b2245/" target="_blank"><img
-              src="./img/icons/linkedin.png" alt=""></a>
+    <!-- ════════════ NAVBAR ════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Home">}<span class="logo-accent">V</span>{</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-pt="Home" data-en="Home">Home</a></li>
+                <li><a href="#about" data-pt="Quem Sou" data-en="About">Quem Sou</a></li>
+                <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+                <li><a href="#skills" data-pt="Habilidades" data-en="Skills">Habilidades</a></li>
+                <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                <span class="lang-active">PT</span> | <span>EN</span>
+            </button>
         </div>
-      </div>
+    </nav>
 
-      <div class="image-inicial">
-        <img class="animation-img" src="img/fotoo.png" />
-      </div>
+    <!-- ════════════ HOME ════════════ -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-pt="Olá, eu sou" data-en="Hello, I'm">Olá, eu sou</p>
+                <h1 class="hero-name">Everton Claudino</h1>
+                <p class="hero-role">Full-Stack Developer Júnior</p>
+                <div class="hero-socials">
+                    <a href="https://github.com/EvertonClaudworworino" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="avatar-placeholder">
+                <img src="image/fotoo.png" alt="Everton Claudino" />
+            </div>
+        </div>
     </section>
 
-    <!--Page-Quem Sou-->
-    <section class="page-quemsou" id="quemsou">
-      <div class="image-quemsou animation-img-QS" data-anime="left">
-        <img src="img/foto2.png" data-anime="left" />
-      </div>
+    <div class="section-divider"><span class="divider-diamond">◇</span></div>
 
-      <div class="txt-quemsou" data-anime="right">
-        <h1 data-anime="down">Quem Sou.</h1>
-        <p data-anime="right">Meu nome é Everton Claudino, Estudante e entusiasta na programação.
-          Atualmente estudando na instituição <a href='https://flag.pt/' target="_blank">FLAG</a> no curso <a
-            href='https://flag.pt/curso/especializado-front-end-web-developer/' target="_blank">Front-End Web
-            Development.</a> Faço
-          web sites e desafios propostos, sempre com qualidade. </p>
-      </div>
+    <!-- ════════════ ABOUT ════════════ -->
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-illustration">
+                    <img src="image/perfil_sobre.png" alt="Everton Claudino" class="about-perfil-img" />
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="section-title gold" data-pt="Quem Sou." data-en="About Me.">Quem Sou.</h2>
+                <p class="about-description"
+                    data-pt='Olá! Sou <strong>Everton Claudino</strong>, alguém que descobriu na programação uma nova forma de criar e resolver problemas. Em processo de reskilling pelo programa <span class="highlight">Pro-Mov (CESAE)</span>, mergulhei de cabeça no universo do desenvolvimento — e não pretendo sair tão cedo.<br><br>Estou construindo minha base com Java, JavaScript, <span class="highlight">React</span>, <span class="highlight">Next.js</span>, desenvolvimento Mobile e Back-End, sempre colocando o aprendizado em prática através de projetos pessoais reais.<br><br>Aprendo rápido, colaboro bem em equipe e acredito que cada projeto é uma oportunidade de evoluir. Estou pronto para o meu primeiro desafio profissional na área.'
+                    data-en='Hello! I am <strong>Everton Claudino</strong>, someone who discovered in programming a new way to create and solve problems. Currently undergoing reskilling through the <span class="highlight">Pro-Mov program (CESAE)</span>, I have dove headfirst into the development universe — and do not plan on leaving anytime soon.<br><br>I am building my foundation with Java, JavaScript, <span class="highlight">React</span>, <span class="highlight">Next.js</span>, Mobile development, and Back-End, always putting learning into practice through real personal projects.<br><br>I learn fast, collaborate well in teams, and believe that every project is an opportunity to evolve. I am ready for my first professional challenge in the field.'>
+                    Olá! Sou <strong>Everton Claudino</strong>, alguém que descobriu na programação uma nova forma de
+                    criar e resolver problemas. Em processo de reskilling pelo programa <span class="highlight">Pro-Mov
+                        (CESAE)</span>, mergulhei de cabeça no universo do desenvolvimento — e não pretendo sair tão
+                    cedo.<br><br>Estou construindo minha base com Java, JavaScript, <span
+                        class="highlight">React</span>, <span class="highlight">Next.js</span>, desenvolvimento Mobile e
+                    Back-End, sempre colocando o aprendizado em prática através de projetos pessoais
+                    reais.<br><br>Aprendo
+                    rápido, colaboro bem em equipe e acredito que cada projeto é uma oportunidade de evoluir. Estou
+                    pronto para o meu primeiro desafio profissional na área.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"><span class="divider-diamond">◇</span></div>
+
+    <!-- ════════════ PROJECTS ════════════ -->
+    <section id="projects" class="section">
+        <h2 class="section-title center" data-pt="Projetos." data-en="Projects.">Projetos.</h2>
+        <div class="projects-grid">
+            <!-- Card 1 — AlPainters -->
+            <div class="project-card">
+                <div class="card-preview">
+                    <div class="card-preview-placeholder">
+                        <img src="image/projetos/Alpainters.png" alt="AlPainters" class="project-image" />
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-title">Alpainters</h3>
+                    <p class="card-desc" data-pt="Landing page institucional para empresa de construção e pintura."
+                        data-en="Institutional landing page for a construction and painting company.">Landing page
+                        institucional para empresa de construção e pintura.</p>
+                    <span class="card-tag">Landing Page</span>
+                    <a href="#" class="card-btn" data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-preview">
+                    <div class="card-preview-placeholder">
+                        <img src="image/projetos/PrimeFlow.png" alt="PrimeFlow" class="project-image" />
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-title">PrimeFlow</h3>
+                    <p class="card-desc" data-pt="Landing page institucional para empresa de construção e pintura."
+                        data-en="Institutional landing page for a construction and painting company.">Dashboard para
+                        pequenas e médias empresas de serviços para gestão financeira da empresa.
+                    </p>
+                    <span class="card-tag">Dashboard</span>
+                    <a href="https://primeflow-landing.vercel.app" class="card-btn" data-pt="Ver Projeto"
+                        data-en="View Project">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-preview">
+                    <div class="card-preview-placeholder">
+
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-title">Em Andamento</h3>
+                    <p class="card-desc" data-pt="Landing page institucional para empresa de construção e pintura."
+                        data-en="Institutional landing page for a construction and painting company.">Em breve
+                    </p>
+                    <span class="card-tag">Em Andamento</span>
+                    <a href="#" class="card-btn" data-pt="Ver Projeto" data-en="View Project">Em Andamento</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-repo">
+            <a href="https://github.com/EvertonClaudino" target="_blank" rel="noopener noreferrer"
+                data-pt="Repositório GitHub →" data-en="GitHub Repository →">Repositório GitHub →</a>
+        </div>
 
     </section>
 
-    <!-- Page - Projetos-->
-    <section class="page-projetos" id="projetos">
-      <div class="titulo-projetos">
-        <h1>Projetos.</h1>
-      </div>
-      <div class="conteudo-projetos" data-anime="down">
+    <div class="section-divider"><span class="divider-diamond">◇</span></div>
 
-        <div class="projeto1">
-          <p>Projeto Em Andamento</p>
+    <!-- ════════════ SKILLS ════════════ -->
+    <section id="skills" class="section">
+        <h2 class="section-title center" data-pt="Habilidades." data-en="Skills.">Habilidades.</h2>
+
+        <div class="skills-wrapper">
+            <div class="skill-column">
+                <h3 class="skill-category-title" data-pt="Front-End" data-en="Front-End">Front-End</h3>
+                <div class="skills-grid">
+                    <button class="skill-card" data-skill="html" data-name="HTML5"
+                        data-desc-pt="Linguagem de marcação para estruturação de páginas web."
+                        data-desc-en="Markup language for structuring web pages.">
+                        <i class="devicon-html5-plain"></i>
+                    </button>
+                    <button class="skill-card" data-skill="css" data-name="CSS3"
+                        data-desc-pt="Folhas de estilo para design e layout de páginas web."
+                        data-desc-en="Stylesheets for web page design and layout.">
+                        <i class="devicon-css3-plain"></i>
+                    </button>
+                    <button class="skill-card" data-skill="js" data-name="JavaScript"
+                        data-desc-pt="Linguagem de programação para interatividade na web."
+                        data-desc-en="Programming language for web interactivity.">
+                        <i class="devicon-javascript-plain"></i>
+                    </button>
+                    <button class="skill-card" data-skill="react" data-name="React"
+                        data-desc-pt="Biblioteca JavaScript para construção de interfaces de usuário."
+                        data-desc-en="JavaScript library for building user interfaces.">
+                        <i class="devicon-react-original"></i>
+                    </button>
+                    <button class="skill-card" data-skill="next" data-name="Next.js"
+                        data-desc-pt="Framework React para aplicações web com renderização híbrida."
+                        data-desc-en="React framework for web apps with hybrid rendering.">
+                        <i class="devicon-nextjs-plain"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="skill-column">
+                <h3 class="skill-category-title" data-pt="Back-End & Ferramentas" data-en="Back-End & Tools">Back-End &
+                    Ferramentas</h3>
+                <div class="skills-grid">
+                    <button class="skill-card" data-skill="java" data-name="Java"
+                        data-desc-pt="Linguagem orientada a objetos para aplicações robustas."
+                        data-desc-en="Object-oriented language for robust applications.">
+                        <i class="devicon-java-plain"></i>
+                    </button>
+                    <button class="skill-card" data-skill="postgresql" data-name="PostgreSQL"
+                        data-desc-pt="Sistema de gerenciamento de banco de dados relacional poderoso e de código aberto."
+                        data-desc-en="Powerful, open source object-relational database system.">
+                        <i class="devicon-postgresql-plain"></i>
+                    </button>
+                    <button class="skill-card" data-skill="github" data-name="GitHub"
+                        data-desc-pt="Plataforma de hospedagem de código e controle de versão."
+                        data-desc-en="Code hosting and version control platform.">
+                        <i class="devicon-github-original"></i>
+                    </button>
+                    <button class="skill-card" data-skill="git" data-name="Git"
+                        data-desc-pt="Sistema de controle de versão distribuído."
+                        data-desc-en="Distributed version control system.">
+                        <i class="devicon-git-plain"></i>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <div class="projeto2">
-          <p>Projeto Em Andamento</p>
+        <div class="skill-detail" id="skill-detail">
+            <p class="skill-detail-name" id="skill-detail-name"></p>
+            <p class="skill-detail-desc" id="skill-detail-desc"></p>
         </div>
-        <div class="projeto3">
-          <p>Projeto Em Andamento</p>
-        </div>
-      </div>
-
-      <div class="projeto-github" data-anime="left">
-        <a class="github_btn" href='https://github.com/EvertonClaudino' target="_blank">Respositorio GitHub</a>
-      </div>
     </section>
 
-    <section class="page-habilidades" id="habilidades">
-      <div class="titulo-habilidades">
-        <h1>Habilidades</h1>
-      </div>
+    <div class="section-divider"><span class="divider-diamond">◇</span></div>
 
-      <div class="Icons-habilidades" data-anime="right">
-        <ul class="habilidades">
-          <li class="icon-list"><img id="icon-html" src="./img/icons/HTML.svg" alt="HTML"></li>
-          <li class="icon-list"><img id="icon-css" src="./img/./icons/CSS3.svg" alt="CSS3"></li>
-          <li class="icon-list"><img id="icon-js" src="./img/icons/JS.svg" alt="JavaScript"></li>
-          <li class="icon-list"><img id="icon-react" src="./img/icons/REACT.svg" alt="React"></li>
-          <li class="icon-list"><img id="icon-github" src="./img/icons/GITHUB.svg" alt="React"></li>
-          <li class="icon-list"><img id="icon-git" src="./img/icons/GIT.svg" alt="React"></li>
-        </ul>
-      </div>
-
-      <div class="text-habilidades" data-anime="left">
-        <p class="textfix" id="text-fix">// Passe o Mouse para saber mais!</p>
-        <p id="text-html" class="hide">
-          HTML
-          <br>
-          <br>
-          HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser
-          interpretados por navegadores
-        </p>
-
-        <p id="text-css" class="hide">
-          CSS3
-          <br>
-          <br>
-          CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem
-          de marcação como HTML. O CSS separa o conteúdo da representação visual do site
-        </p>
-
-        <p id="text-js" class="hide">
-          JavaScript
-          <br>
-          <br>
-          JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web,
-          mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc
-        </p>
-
-        <p id="text-react" class="hide">
-          REACT
-          <br>
-          <br>
-          O React, também denominado React.js ou ReactJS é uma biblioteca JavaScript de código aberto com foco em criar
-          interfaces de usuário frontend em páginas web
-        </p>
-
-        <p id="text-git" class="hide">
-          GIT
-          <br>
-          <br>
-          O Git é um sistema de controlo de versões de código aberto. Facilita este tipo de colaboração em projetos
-          através de um controlo de versões distribuído de ficheiros que residem nos repositórios
-        </p>
-
-        <p id="text-github" class="hide">
-          GitHub
-          <br>
-          <br>
-          GitHub é um serviço de hospedagem baseado na web para repositórios Git, como os usados para armazenar
-          docs.microsoft.com conteúdo. Em qualquer projeto, o GitHub aloja o repositório principal, do qual os
-          contribuidores podem fazer cópias para trabalharem.
-        </p>
-      </div>
+    <!-- ════════════ CONTACT ════════════ -->
+    <section id="contact" class="section">
+        <h2 class="section-title center" data-pt="Contato." data-en="Contact.">Contato.</h2>
+        <form class="contact-form" id="contact-form" autocomplete="off">
+            <div class="form-group">
+                <label for="name" data-pt="Nome" data-en="Name">Nome</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="subject" data-pt="Assunto" data-en="Subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+                <label for="message" data-pt="Mensagem" data-en="Message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-pt="Enviar" data-en="Send">Enviar</button>
+        </form>
     </section>
-  </main>
 
-  <div class="linha-horizontal"></div>
-  <footer class='footer'>
-    <div class='txt'>
-      <p>&copy; Powered by Everton Claudino</p>
-    </div>
-    <div class="icons-footer">
-      <a href='https://github.com/EvertonClaudino' target="_blank"><img src="./img/icons/github.png" alt=""></a>
-      <a href="https://www.linkedin.com/in/everton-claudino-2051b2245/" target="_blank"><img
-          src="./img/icons/linkedin.png" alt=""></a>
-    </div>
-  </footer>
+    <!-- ════════════ FOOTER ════════════ -->
+    <footer class="footer">
+        <p>&copy; 2025 Everton Claudino. <span data-pt="Todos os direitos reservados."
+                data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+    </footer>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
