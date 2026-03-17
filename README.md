@@ -1,7 +1,7 @@
 <h1 align="center">💻 Portfólio — Everton Claudino</h1>
 
 <p align="center">
-  <img src="img/wallpaperportifolio.png" alt="Preview do Portfólio" width="100%"/>
+  <img src="https://raw.githubusercontent.com/EvertonClaudino/portifolio/refs/heads/main/image/foto-readme.png" alt="Preview do Portfólio" width="100%"/>
 </p>
 
 <p align="center">
