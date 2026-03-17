@@ -1,41 +1,56 @@
-<h1 align="center">
-  💻<br>Portfólio - Everton Claudino
-</h1>
+<h1 align="center">💻 Portfólio — Everton Claudino</h1>
 
-![Resultado final do projeto](img/wallpaperportifolio.png)
+<p align="center">
+  <img src="img/wallpaperportifolio.png" alt="Preview do Portfólio" width="100%"/>
+</p>
 
-<h4 align=center><a href="https://evertonclaudino.vercel.app/">Veja o Projeto</a>
-
-## 📚 Seções
-
-O site é composto por quatro seções:
-
-- **Home:** Nele temos uma breve apresentação do site;
-- **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
-- **Projetos:** Apresenta alguns projetos em desenvolvimentos e com link direto para o meu GitHub;
-- **Conhecimentos:** Nele apresento meus conhecimentos em algumas linguagens como o foco no front-end;
+<p align="center">
+  <a href="https://evertonclaudino.vercel.app/">🌐 Ver Portfólio ao Vivo</a>
+</p>
 
 ---
 
-## 💼 Tecnologias utilizadas
+## 📋 Sobre o Projeto
 
-Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+Portfólio pessoal desenvolvido para apresentar a minha jornada como **Full-Stack Developer Júnior**, incluindo projetos reais, habilidades técnicas e formas de contacto. Disponível em **PT 🇵🇹 e EN 🇬🇧**.
 
-- HTML;
-- CSS3;
-- JavaScript;
 ---
 
-<h2>✏️ Autor</h2>
+## 📚 Secções
+
+| Secção | Descrição |
+|---|---|
+| **Home** | Apresentação e título profissional |
+| **Quem Sou** | Trajetória, motivação e perfil profissional |
+| **Projetos** | Projetos reais com links para demo e GitHub |
+| **Habilidades** | Stack técnico de Front-End, Back-End e ferramentas |
+| **Contacto** | Formulário direto de contacto |
+
+---
+
+## 🚀 Projetos em Destaque
+
+- **[AlPainters](https://evertonclaudino.vercel.app/)** — Landing page institucional para empresa de construção e pintura
+- **[PrimeFlow](https://primeflow-landing.vercel.app)** — Dashboard financeiro para pequenas e médias empresas
+
+---
+
+## 💼 Tecnologias Utilizadas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,java,git,vscode" />
+</p>
+
+---
+
+## ✏️ Autor
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/EvertonClaudino">
-        <img src="https://avatars.githubusercontent.com/u/97559532?v=4" width="100px;" alt="Foto Everton Claudino GitHub"/><br>
-        <sub>
-          <b>Everton Claudino</b>
-        </sub>
+        <img src="https://avatars.githubusercontent.com/u/97559532?v=4" width="100px;" alt="Everton Claudino"/><br>
+        <sub><b>Everton Claudino</b></sub>
       </a>
     </td>
   </tr>
