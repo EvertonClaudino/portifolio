@@ -121,6 +121,25 @@
     });
   });
 
+  // ─── Typing Animation ──────────────────────────────
+  const heroNameEl = document.querySelector('.hero-name');
+  if (heroNameEl) {
+    const textToType = heroNameEl.textContent.trim();
+    heroNameEl.innerHTML = '<span class="typed-text"></span><span class="cursor">|</span>';
+    const typedTextEl = heroNameEl.querySelector('.typed-text');
+    
+    let charIndex = 0;
+    function typeText() {
+      if (charIndex < textToType.length) {
+        typedTextEl.textContent += textToType.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, Math.random() * 50 + 70);
+      }
+    }
+    
+    setTimeout(typeText, 500);
+  }
+
   // ─── Contact Form (prevent default) ────────────────
   const form = document.getElementById('contact-form');
   form.addEventListener('submit', e => {
