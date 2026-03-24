@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@iconfu/svg-inject": "^1.2.3"
+    "@iconfu/svg-inject": "^1.2.3",
+    "pg": "^8.20.0"
   }
 }

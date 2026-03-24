@@ -142,19 +142,51 @@
 
   // ─── Contact Form (prevent default) ────────────────
   const form = document.getElementById('contact-form');
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
     const originalText = btn.textContent;
-    btn.textContent = currentLang === 'pt' ? 'Enviado ✓' : 'Sent ✓';
-    btn.style.background = 'var(--accent-cyan)';
-    btn.style.color = 'var(--bg-dark)';
+    btn.textContent = currentLang === 'pt' ? 'Enviando...' : 'Sending...';
+    btn.style.opacity = '0.7';
+    btn.style.pointerEvents = 'none';
+
+    const payload = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        btn.textContent = currentLang === 'pt' ? 'Enviado ✓' : 'Sent ✓';
+        btn.style.background = 'var(--accent-cyan)';
+        btn.style.color = 'var(--bg-dark)';
+        form.reset();
+      } else {
+        btn.textContent = currentLang === 'pt' ? 'Erro ✖' : 'Error ✖';
+        btn.style.background = '#ff4444';
+        console.error(await response.text());
+      }
+    } catch (error) {
+      btn.textContent = currentLang === 'pt' ? 'Erro ✖' : 'Error ✖';
+      btn.style.background = '#ff4444';
+      console.error('Error submitting form:', error);
+    }
+
     setTimeout(() => {
       btn.textContent = originalText;
       btn.style.background = '';
       btn.style.color = '';
-      form.reset();
-    }, 2000);
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+    }, 3000);
   });
 
   // ─── Scroll listener ──────────────────────────────
